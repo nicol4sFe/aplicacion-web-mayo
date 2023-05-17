@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicativo web</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/aplicacion-web-mayo/media/styles/css/styles.css">
+  <script src="/aplicacion-web-mayo/media/styles/js/styles.js"></script>
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/aplicacion-web-mayo/index.html">Aplicativo web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Administrador</a>
+            <ul class="dropdown-menu navbar-light bg-light">
+              <li><a class="dropdown-item" href="/aplicacion-web-mayo/submenu/administrator/create-db.php">Crear base de datos</a></li>
+              <li><a class="dropdown-item" href="/aplicacion-web-mayo/submenu/administrator/create-table.php">Crear tabla</a></li>
+              <li><a class="dropdown-item" href="/aplicacion-web-mayo/submenu/administrator/backup.php">Realizar
+                  back up</a></li>
+              <li><a class="dropdown-item" href="/aplicacion-web-mayo/submenu/administrator/generatorpdf.php">Generar
+                  informe</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Inventarios</a>
+            <ul class="dropdown-menu navbar-light bg-light">
+              <li><a class="dropdown-item" href="/aplicacion-web-mayo/submenu/inventory/form_search.html">Consultar</a>
+              </li>
+              <li><a class="dropdown-item" href="/aplicacion-web-mayo/submenu/inventory/form_insert.html">Registrar</a>
+              </li>
+              <li><a class="dropdown-item" href="/aplicacion-web-mayo/submenu/inventory/form_update.html">Actualizar</a>
+              </li>
+              <li><a class="dropdown-item" href="/aplicacion-web-mayo/submenu/inventory/form_delete.html">Eliminar</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aplicacion-web-mayo/submenu/utilities.html">Utilidades</a>
+          </li>
+          <li class="nav-item">
+            <!-- Botón para cambiar a modo oscuro -->
+            <button class="btn btn-primary" id="dark-mode-btn">
+              <i class="bi bi-moon bi-fill" style="font-size: 1.5rem;"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Contenido de la página -->
+  <div class="container mt-3">
+    <br>
+    <h1>Contenido de la página</h1>
+    <br>
+    <p>¿Qué es Lorem Ipsum?
+      Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+      texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
+      dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un
+      libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en
+      documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la
+      creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con
+      software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+    </p>
+    <br>
+    <p>¿Por qué lo usamos?
+      Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio
+      mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las
+      letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen
+      parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem
+      Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web
+      que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los
+      años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+    </p>
+    <br>
+    <p>¿De dónde viene?
+      Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices
+      en una pieza clasica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera
+      mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en
+      Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem
+      Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las
+      secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero,
+      escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el
+      Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección
+      1.10.32. El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos
+      interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también
+      reproducidas en su forma
+      original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
+    </p>
+    <br>
+    <p>¿Dónde puedo conseguirlo?
+      Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna
+      manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a
+      utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio
+      del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos
+      predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un
+      diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias,
+      para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de
+      repeticiones, humor agregado o palabras no características del lenguaje, etc.
+    </p>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis vehicula sapien, a tincidunt ligula.
+      Pellentesque a metus consectetur, volutpat metus quis, bibendum nibh. Integer non ullamcorper risus, nec pharetra
+      eros. Aenean sollicitudin convallis ligula vel varius. Mauris ante lacus, sodales vel urna quis, ornare porta
+      massa. Nunc pharetra finibus nibh ac lobortis. Orci varius natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Curabitur commodo neque eleifend, sagittis mauris nec, tristique augue. Praesent auctor ut
+      erat eu auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque
+      leo erat, interdum at mattis id, varius non justo. Nulla rutrum non ligula sed placerat. Aliquam erat volutpat.
+      Cras pellentesque at felis at porttitor.
+    </p>
+    <br>
+    <p>
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed lobortis luctus
+      ex, vel iaculis justo dapibus eget. Suspendisse condimentum, sem ut hendrerit egestas, nunc est imperdiet nisi,
+      tempor blandit tortor elit rutrum nisi. Vestibulum ut pellentesque tellus. Sed facilisis eu ligula et dapibus.
+      Nulla id leo urna. Sed et aliquam purus. Fusce ut mi eu tellus pharetra ullamcorper ac sit amet tortor. Duis
+      volutpat blandit dolor, in pharetra nisi vestibulum vel. Aenean ultricies lorem ut odio volutpat, id commodo metus
+      consectetur. Sed fermentum diam viverra, tincidunt dolor non, dignissim sem. Quisque id cursus sem. Cras luctus
+      nec metus cursus ullamcorper. Ut id vehicula erat. Aenean vel dui ac elit fermentum porta. Pellentesque consequat
+      mollis magna, sit amet semper lectus rutrum nec.
+    </p>
+    <br>
+    <p>
+      Nam dictum id ex vel tincidunt. Nam sed orci at quam hendrerit fermentum at in ante. Mauris tincidunt ex nec
+      tortor consectetur cursus. Etiam egestas eget nisi vitae venenatis. Suspendisse sit amet nisi et turpis luctus
+      consequat. Etiam mattis, arcu et cursus faucibus, lorem nunc egestas ipsum, eu consectetur felis mi non ligula.
+      Quisque vitae vestibulum sem. Mauris maximus felis nibh, a ultrices elit tempus vitae. Suspendisse eget est lacus.
+      Suspendisse a tellus lectus.
+    </p>
+    <br>
+    <p>
+      Phasellus mattis tellus magna, at scelerisque neque tincidunt nec. Integer mollis, neque nec accumsan pharetra,
+      leo magna vehicula est, eu lacinia arcu nunc vel neque. Suspendisse ullamcorper dolor ut auctor bibendum. Aliquam
+      id leo ut metus gravida dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+      himenaeos. Praesent sit amet pellentesque justo. Duis sed dictum lacus. In laoreet nunc vitae enim volutpat
+      mollis. Fusce nisi elit, cursus id lacinia eu, blandit eu est. Donec vitae sapien vel ex facilisis iaculis. Ut
+      vulputate, metus non egestas molestie, tellus elit blandit mauris, scelerisque faucibus nisi dolor dapibus elit.
+      Curabitur pellentesque arcu ex, tincidunt faucibus turpis condimentum quis. Curabitur orci dui, ultrices euismod
+      tellus in, blandit venenatis sem.
+    </p>
+    <br>
+    <p>
+      Proin non urna feugiat, viverra risus in, lobortis velit. Etiam blandit ligula vel risus bibendum volutpat.
+      Praesent dolor eros, interdum auctor tincidunt sed, iaculis quis turpis. Fusce tristique tincidunt pretium. In
+      fringilla, risus scelerisque gravida feugiat, nisi nisi laoreet nunc, eu condimentum arcu leo vel diam. Morbi
+      posuere ac felis consectetur mattis. Nam vehicula orci a arcu gravida, et viverra tellus vehicula. Donec dapibus
+      justo non nisi ultrices, vitae finibus nibh venenatis. Quisque sodales leo id ullamcorper varius.
+    </p>
+  </div>
+
+</body>
+
+<!--Pie de pagina-->
+<footer>
+  <div class="container">
+    <!-- Contenido del footer -->
+    <button id="scroll-to-top" title="Go to top" class="btn btn-primary">
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
+  </div>
+</footer>
+
+<!-- Link alos archivo JavaScript de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>

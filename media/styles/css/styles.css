@@ -1,0 +1,62 @@
+body {
+    background-color: #fff;
+    color: #222;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+#dark-mode-btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+#dark-mode-btn i {
+    color: #007bff;
+    font-size: 1.0rem;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    
+}
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease-in-out;
+    width: 40px;
+    height: 40px;
+}
+
+#scroll-to-top:hover {
+    background-color: #0c65c4;
+    transform: scale(1.1);
+}
+
+#scroll-to-top i {
+    margin-top: 2px;
+    vertical-align: middle;
+}
